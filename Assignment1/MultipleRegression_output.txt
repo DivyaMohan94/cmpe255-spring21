@@ -1,0 +1,3 @@
+RMSE value -  5.783509315085133
+R Squared value-  0.5892223849182512
+Adjusted R Squared value-  0.528539328144811
