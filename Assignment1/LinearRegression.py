@@ -24,8 +24,11 @@ for i in range(len(labels)-1):
     RMSE.append(np.sqrt(metrics.mean_squared_error(y_test, y_pred)))
     RSquared.append(metrics.r2_score(y_test, y_pred))
 
-print(min(RMSE))
-print(max(RSquared))
+RMSE_LSAT = min(RMSE)
+RSQ_LSAT = max(RSquared)
+
+print('RMSE of LSAT: ',RMSE_LSAT)
+print('R squared: ',RSQ_LSAT)
 
 X = dataset.iloc[:, 12:13].values
 y = dataset.iloc[:, -1].values
